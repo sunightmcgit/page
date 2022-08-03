@@ -7,6 +7,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">
+<SCRIPT language=JavaScript>
+    var message = "This action is disabled";
+    function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+    if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+    document.onmousedown = rtclickcheck;
+</SCRIPT>
 <style>
 body,h1 {font-family: "Inter", sans-serif}
 body, html {height: 100%}
@@ -40,19 +46,17 @@ button:hover {
 </style>
 </head>
 <body>
-
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    <img src="assets/logo.png" alt="AvdanOS Logo" height="64px" oncontextmenu="return false;">
-    </div>
-
-  <div class="w3-display-middle" style="text-align:center">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON!</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <br>
-    <a href="https://avdanos.com" class="big"><button class="button">AvdanOS Home Page</button></a>
-  </div>
-</div>
-
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+        <div class="w3-display-topleft w3-padding-large w3-xlarge">
+          <img src="assets/logo.png" alt="AvdanOS Logo" height="64px" oncontextmenu="return false;">
+          </div>
+      
+        <div class="w3-display-middle" style="text-align:center">
+          <h1 class="w3-jumbo w3-animate-top">COMING SOON!</h1>
+          <hr class="w3-border-grey" style="margin:auto;width:40%">
+          <br>
+          <a href="https://avdanos.com" class="big"><button class="button">AvdanOS Home Page</button></a>
+        </div>
+      </div>
 </body>
 </html>
