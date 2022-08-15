@@ -7,15 +7,19 @@ function setFormMessage(formElement, type, message) {
 }
 
 function setInputError(inputElement, message) {
-    importElement.classList.add("Form__input--error");
-    inputElement.parentElement.querySelector(".form__input--error-message".textContent = message);
-}
+    inputElement.classList.add("form__input--error");
 
-setFormMessage(loginForm, "success", "You're logged in!");
+    inputElement
+        .parentElement
+        .querySelector(".form__input-error-message")
+        .innerText = message;
+}   
+// setFormMessage(loginForm, "success", "You're logged in!");
 
 document.addEventListener("DOMContentLoaded", () => {
     const loginForm = document.querySelector("#login");
     const createAccountForm = document.querySelector("#createAccount");
+
 
     document.querySelector("#linkCreateAccount").addEventListener("click", e => {
         e.preventDefault();
@@ -38,9 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelectorAll(".form__input").forEach(inputElement => {
-        inputElement.addEventListener("blur", e => {
-            if (e.target.id === "loginUsername" && e.target.value.length > 0 && e.target.value.length < 3) {
-                setInputError(inputElement, "Username must contain atleast 3 characters.")
+        inputElement.addEventListener("blur", function(e) {
+
+            if (this.id === "loginUsername" && this.value.length < 3) {
+                setInputError(this, "Username must contain at least 3 characters.")
             }
         });
     });
