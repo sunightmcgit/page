@@ -98,6 +98,25 @@ html * {
     padding: 20px;
     border-radius: 10px;
 }
+.notif {
+    color: black;
+    background-color: red;
+    width: 15%;
+    height: 10%;
+    display: block;
+    right: 30px;
+    top: 320px;
+    position: absolute;
+    padding: 15px;
+    border-radius: 10px;
+}
+.notif h1 {
+    font-size: 23px;
+}
+.notif h2 {
+    font-size: 14px;
+}
+
 
 @media only screen and (max-width: 600px) {
     .sidenav {
