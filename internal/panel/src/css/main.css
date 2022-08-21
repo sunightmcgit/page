@@ -99,7 +99,7 @@ html * {
     border-radius: 10px;
 }
 .notif {
-    color: black;
+    color: #ffffff;
     background-color: red;
     width: 15%;
     height: 10%;
@@ -112,9 +112,46 @@ html * {
 }
 .notif h1 {
     font-size: 23px;
+    color: #cacaca;
 }
 .notif h2 {
     font-size: 14px;
+}
+.widget {
+    color: black;
+    background-color: rgb(166, 189, 252);
+    width: 15%;
+    height: 10%;
+    display: block;
+    right: 30px;
+    top: 422px;
+    position: absolute;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: small;
+}
+.widget i {
+    color: black;
+    font-size: 68px;
+}
+.repo-icon {
+    margin-bottom: -80px;
+    width: 20%;
+    margin-top: -8px;
+}
+.repo-text {
+    color: #555555;
+    text-align: left;
+    margin-left: 27%;
+    right: 1px;
+    top: 1px;
+    margin-top: 10px;
+    font-size: -6px;
+}
+.repo-count {
+    margin-left: 27%;
+    margin-top: 6px;
+    font-size: 1.25rem;
 }
 
 
