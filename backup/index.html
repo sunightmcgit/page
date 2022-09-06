@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lale - A completely reimagined web browsing.</title>
+<link rel="icon" href="assets/logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">
+<SCRIPT language=JavaScript>
+    var message = "This action is disabled";
+    function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+    if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+    document.onmousedown = rtclickcheck;
+</SCRIPT>
+<style>
+body,h1 {font-family: "Inter", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('assets/bg.png');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+a {
+    text-decoration: none;
+}
+button {
+  border: 2px solid black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  transition-duration: 0.4s;
+}
+button:hover {
+  background-color: black; 
+  color: white;
+  border: 2px solid white;
+}
+
+</style>
+</head>
+<body>
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+        <div class="w3-display-topleft w3-padding-large w3-xlarge">
+          <img src="assets/logo.png" alt="AvdanOS Logo" height="64px" oncontextmenu="return false;">
+          </div>
+      
+        <div class="w3-display-middle" style="text-align:center">
+          <h1 class="w3-jumbo w3-animate-top">COMING SOON!</h1>
+          <hr class="w3-border-grey" style="margin:auto;width:40%">
+          <br>
+          <a href="https://avdanos.com" class="big"><button class="button">AvdanOS Home Page</button></a>
+        </div>
+      </div>
+</body>
+</html>
